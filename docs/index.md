@@ -1,17 +1,28 @@
-# Welcome to MkDocs
+# 数字逻辑设计 实验介绍
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 一    实验主题
 
-## Commands
+1. 基本电路元件的使用
+2. 基本门电路的实现
+3. 小规模集成电路的使用
+4. EDA工具的使用
+5. 译码器的设计实现
+6. 七段数码管的使用
+7. 多路选择器和分时控制实现
+8. 加法器与ALU实现
+9. 基本锁存器与触发器实现
+10. 简单有限状态机实现
+11. 简单寄存器传输系统实现
+12. VGA接口的使用
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 二     评分标准
 
-## Project layout
+### 实验验收（50%）
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+每组实验完成后找助教进行对这组实验的验收，由助教检查上板验证结果并进行提问。
+
+其中，实验4、5为一组，实验6、7、8为一组，实验9、10、11为一组。
+
+### 实验报告（50%）
+
+每次实验完成后按照当次实验的要求提交实验报告。
