@@ -180,7 +180,7 @@ Vivado 无法读取 Logisim 的工程文件或原理图文件，需要通过将 
 
 按照上一部分所述方法，使用 Logisim 绘制如下电路图，并生成对应的 Verilog 代码：
 
-<img src="img/lab4/13.png" alt="原理图" style="zoom:50%" align="left" />
+![目标原理图](img/lab4/13.png)
 
 
 
