@@ -10,8 +10,8 @@
 1. EDA 工具： Logisim Evolution（依赖于 Java 16）,  Vivado
 2. SWORD 开发板
 3. 操作系统： Windows 10+，需要：
-   - 预先配置好 Java 16或 以上，可由[此链接](https://www.oracle.com/java/technologies/downloads/)下载。下载并安装后，需将 JDK 和 JRE 的安装目录中的 `./bin` 子目录添加到 `Path` 环境变量中，且创建 `JAVA_HOME` 系统变量为 JDK 的安装目录。
-   - 预先下载 Logisim Evolution。本套实验指导使用的是 3.8.0 版本。可由[此链接](https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.8.0/logisim-evolution-3.8.0-all.jar)下载。 Logisim Evolution 依赖 Java 16。
+   - 预先配置好 Java 17，可由[此链接](https://www.oracle.com/java/technologies/downloads/)下载。下载并安装后，需将 JDK 和 JRE 的安装目录中的 `./bin` 子目录添加到 `Path` 环境变量中，且创建 `JAVA_HOME` 系统变量为 JDK 的安装目录。
+   - 预先下载 Logisim Evolution。本套实验指导使用的是 3.8.0 版本。可由[此链接](https://github.com/logisim-evolution/logisim-evolution/releases)下载。 Logisim Evolution 依赖 Java 16。
    - 预先安装 Vivado。建议使用 2022.2 以上版本，可由[此链接](https://china.xilinx.com/support/download.html)下载。
 
 ## 三    实验原理
