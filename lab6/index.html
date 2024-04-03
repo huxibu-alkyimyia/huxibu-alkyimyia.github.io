@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../lab4/">
+        <link rel="prev" href="../lab5/">
       
       
-        <link rel="next" href="../lab6/">
+        <link rel="next" href="../verilog/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>实验五 译码器设计与开关、LED 交互的应用 - 2024 数字逻辑设计 实验指导</title>
+        <title>实验六 子板七段数码管交互的应用 - 2024 数字逻辑设计 实验指导</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#led" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              实验五  译码器设计与开关、LED 交互的应用
+              实验六  子板七段数码管交互的应用
             
           </span>
         </div>
@@ -228,6 +228,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验五  译码器设计与开关、LED 交互的应用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -244,7 +264,7 @@
           
   
   <span class="md-ellipsis">
-    实验五  译码器设计与开关、LED 交互的应用
+    实验六  子板七段数码管交互的应用
   </span>
   
 
@@ -255,7 +275,7 @@
         
   
   <span class="md-ellipsis">
-    实验五  译码器设计与开关、LED 交互的应用
+    实验六  子板七段数码管交互的应用
   </span>
   
 
@@ -277,7 +297,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       一    实验目的
     </span>
@@ -286,7 +306,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       二    实验环境
     </span>
@@ -295,7 +315,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       三    实验原理
     </span>
@@ -305,60 +325,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-verilog" class="md-nav__link">
+  <a href="#1-arduino" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Verilog 仿真激励的编写
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-logisim" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Logisim 集线器的使用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-led" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 开关和子板 LED 交互的使用
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      四    实验步骤
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四 实验步骤">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-3-8" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 完成 3 - 8 译码器的原理图设计并仿真
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 进行上板验证
+      1. Arduino 子板七段数码管交互的使用
     </span>
   </a>
   
@@ -372,6 +341,57 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
+      四    实验步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四 实验步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.分析七段数码管的真值表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2logisimsimplemc14495" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.用Logisim作图的方式完成SimpleMC14495
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3top" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.补全top模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.上板验证
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
       五    实验提交要求
     </span>
   </a>
@@ -382,26 +402,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lab6/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    实验六  子板七段数码管交互的应用
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -453,7 +453,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       一    实验目的
     </span>
@@ -462,7 +462,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       二    实验环境
     </span>
@@ -471,7 +471,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       三    实验原理
     </span>
@@ -481,60 +481,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-verilog" class="md-nav__link">
+  <a href="#1-arduino" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Verilog 仿真激励的编写
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-logisim" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Logisim 集线器的使用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-led" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 开关和子板 LED 交互的使用
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      四    实验步骤
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四 实验步骤">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-3-8" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 完成 3 - 8 译码器的原理图设计并仿真
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 进行上板验证
+      1. Arduino 子板七段数码管交互的使用
     </span>
   </a>
   
@@ -547,6 +496,57 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      四    实验步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四 实验步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.分析七段数码管的真值表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2logisimsimplemc14495" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.用Logisim作图的方式完成SimpleMC14495
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3top" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.补全top模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.上板验证
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       五    实验提交要求
     </span>
@@ -569,135 +569,221 @@
                   
 
 
-<h1 id="led">实验五  译码器设计与开关、LED 交互的应用</h1>
-<h2 id="_1">一    实验目的</h2>
+<h1 id="_1">实验六  子板七段数码管交互的应用</h1>
+<h2 id="_2">一    实验目的</h2>
 <ol>
-<li>进一步熟悉 Logisim Evolution 和 Vivado 的使用方法</li>
-<li>初步了解 Verilog 仿真激励代码的编写</li>
-<li>了解 Sword 开发板的开关交互和 LED 交互</li>
+<li>了解 Sword 开发板的子板七段数码管交互</li>
+<li>熟悉通过卡诺图进行组合逻辑设计的过程</li>
+<li>初步熟悉 Verilog </li>
 </ol>
-<h2 id="_2">二    实验环境</h2>
+<h2 id="_3">二    实验环境</h2>
 <ol>
 <li>EDA 工具： Logisim Evolution、Vivado</li>
 <li>SWORD 开发板</li>
 <li>操作系统： Windows 10+</li>
 </ol>
-<h2 id="_3">三    实验原理</h2>
-<h3 id="1-verilog">1. Verilog 仿真激励的编写</h3>
-<p>此处，以上一个实验使用的仿真激励代码为例，简要说明仿真激励代码的编写方式：</p>
-<ul>
-<li>编写仿真激励，需要创建一个激励模块，随后在这个激励模块中实例化一个被测模块，并且给被测模块的输入赋值。如：</li>
-</ul>
-<pre><code class="language-verilog">module main_sim();
-
-    // 实例化被测模块
-    reg [2:0] i;
-    wire o0, o1, o2, o3;
-    main uut(.I0(i[0]), .I1(i[1]), .I2(i[2]), .O0(o0), .O1(o1), .O2(o2), .O3(o3));
-
-    // 给被测模块的输入赋值
-    initial 
-        for (i = 3'b0; 1; i = i+1) #100;
-
-endmodule
-</code></pre>
-<ul>
-<li>其中，下面这一段进行的是变量的定义：</li>
-</ul>
-<pre><code class="language-verilog">    reg [2:0] i;
-    wire o0, o1, o2, o3;
-</code></pre>
-<p>Verilog 中有两个基本数据类型：线网（<code>wire</code>）和寄存器（<code>reg</code>）。其中，线网类型表示硬件单元之间的物理连线，寄存器类型用于表示存储单元。为了方便给模块的输入赋值，用作输入的信号通常定义为寄存器类型。</p>
-<p>其中 <code>reg [2:0] i;</code> 表示定义了一个最高位为 2，最低位为 0 的向量变量。未声明为向量的变量都只有 1 bit，声明为向量的变量则根据定义的最高位和最低位来确定其位宽（如前面那个语句定义的变量 i 即有 3 bit）。</p>
-<ul>
-<li>下面这一行进行的是被测模块的实例化：</li>
-</ul>
-<pre><code class="language-verilog">    main uut(.I0(i[0]), .I1(i[1]), .I2(i[2]), .O0(o0), .O1(o1), .O2(o2), .O3(o3));
-</code></pre>
-<p>这一行当中，<code>main</code> 是被测模块的模块名，<code>uut</code> 是被测模块在激励模块中实例化后的实例名。<code>.I0(i[0])</code> 表示 <code>main</code> 模块的 <code>I0</code> 接口在 <code>uut</code> 这一实例中接到 <code>i[0]</code> 这个信号上（<code>i[0]</code> 指 <code>i</code> 这个向量信号的最低位，即第 0 位）。将所有需要连接的接口都接到对应的信号上，即可完成该模块的实例化。</p>
-<ul>
-<li>下面这一部分是对输入的赋值：</li>
-</ul>
-<pre><code class="language-verilog">    initial 
-        for (i = 3'b0; 1; i = i+1) #100;
-</code></pre>
-<p>其中 <code>#100</code> 表示延时 100 ns。<code>initial</code> 表示下面的一个语句在仿真开始时执行一次。<code>for</code> 语句的含义与 C 语言中类似。</p>
-<p>当我们需要仿真开始时执行多个语句时，可以用 <code>begin</code> 和 <code>end</code> 组成一个块语句接在 <code>initial</code> 关键字之后，如：</p>
-<pre><code class="language-verilog">    initial begin
-        i = 3'd0;
-        #100;
-        i = 3'd1;
-        #100;
-        i = 3'd2;
-        #100;
-        i = 3'd3;
-    end
-</code></pre>
-<p>上面这段仿真激励代码的功能是：初始时将变量 <code>i</code> 置为 0，100 ns 后将 <code>i</code> 置为 1，又 100 ns 后将 <code>i</code> 置为 2，又 100 ns 后将 <code>i</code> 置为 3。</p>
-<p>其中，<code>3'd0</code> 是 Verilog 中表示数值字面量的方式，<code>3'</code> 表示该字面量的位宽为 3，<code>d</code> 表示该字面量为十进制（对应地，有 <code>b</code> 表示二进制，<code>h</code> 表示十六进制），<code>0</code> 为该字面量的值。</p>
-<p>与 <code>initial</code> 关键字相对应的 <code>always</code> 关键字。<code>always</code> 语句块从 0 时刻开始执行其中的行为语句；当执行完最后一条语句后，便再次执行语句块中的第一条语句，如此循环反复。如下面这段将 <code>clk</code> 信号的行为定义为一个周期为 10 ns 的时钟信号（其中 <code>~</code> 为按位非运算符）：</p>
-<pre><code class="language-verilog">    initial clk = 0;
-    always begin
-        clk = ~clk;
-        #5;
-    end
-</code></pre>
-<p>又如，使用如下的一段仿真激励代码即可验证 3 - 8 译码器模块的功能的正确性：</p>
-<pre><code class="language-verilog">module main_sim();
-
-    reg [2:0] i;
-    wire [7:0] o;
-
-    // 将此处的模块名称和模块接口修改为你所使用的模块名称和模块接口
-    main uut(.SW(i), .LED(o));
-
-    initial 
-        for (i = 3'b0; 1; i = i+1) #100;
-
-endmodule
-</code></pre>
-<p>上面这段代码的功能是，每隔 100 ns 将输入译码器的信号的对应的二进制数加一，从而改变输入译码器的信号。我们可以根据这段代码生成的仿真激励波形中输入和输出的对应关系是否正确来判断 3 - 8 译码器的实现是否正确。</p>
-<p>请注意，使用这段代码时，需要将其中的模块名称 <code>main</code> 和模块接口 <code>SW</code> 和 <code>LED</code> 改为你所使用的模块名称和接口。</p>
-<h3 id="2-logisim">2. Logisim 集线器的使用</h3>
-<p>在上一节涉及到了 Vivado 中的向量信号，这一节主要涉及 Logisim 中的向量信号。</p>
-<p>例如，若要定义一个位宽为 3 的向量输入信号，则需创建一个输入端口，并在 Logisim 窗口左下方的 <code>Properties</code> 中将该端口的 <code>Data Bits</code> 改为 3：</p>
-<p><img alt="输入总线" src="../img/lab5/2.png" /></p>
-<p>修改完成后效果如下图所示：</p>
-<p><img alt="输入总线2" src="../img/lab5/3.png" /></p>
-<p>同理，输出端口也可以如此修改：</p>
-<p><img alt="输出总线" src="../img/lab5/4.png" /></p>
-<p>向量端口不能直接接到门电路上，需要通过分流器，将向量端口中的每一位信号分出来才可以接到门电路上。</p>
-<p>若要添加分流器，需要点击窗口左上方的 <code>Wiring -&gt; Splitter</code>，随后在电路图中合适位置添加分流器即可。</p>
-<p><img alt="分流器" src="../img/lab5/5.png" /></p>
-<p>添加分流器后，也可以在窗口左下方的 <code>Properties</code> 中对分流器进行修改：</p>
-<p><img alt="分流器2" src="../img/lab5/6.png" /></p>
-<p>同时，原理图中的其他元素（如门电路等）也可以通过窗口左下方的 <code>Properties</code> 来进行修改。例如，借助以上操作，可以完成 2 - 4 译码器的设计如下图：</p>
-<p><img alt="译码器设计" src="../img/lab5/7.png" /></p>
-<h3 id="3-led">3. 开关和子板 LED 交互的使用</h3>
-<p>为一位信号约定引脚约束，需要在引脚约束文件中为这一位信号指定 <code>PACKAGE_PIN</code>（引脚位置）以及 <code>IOSTANDARD</code>（引脚类型）。如下图中圈出的十六个开关中最右侧的一个开关的 <code>PACKAGE_PIN</code> 是 <code>AA10</code>，<code>IOSTANDARD</code> 是 <code>LVCMOS15</code>，则在引脚约束文件中添加如下两行即可将 <code>SW[0]</code> 约束到最右侧的开关，即可以使用最右侧的开关控制 <code>SW[0]</code> 的值：</p>
-<pre><code>set_property PACKAGE_PIN AA10       [get_ports SW[0]]
-set_property IOSTANDARD LVCMOS15    [get_ports SW[0]]
-</code></pre>
-<p>上面这两行代码中，第一行用于给 <code>SW[0]</code> 信号指定 <code>PACKAGE_PIN</code>（引脚约束），第二行用于给 <code>SW[0]</code> 信号指定 <code>IOSTANDARD</code>（引脚类型）。</p>
-<p><img alt="Sword板-开关" src="../img/lab5/1.jpg" /></p>
-<p>Sword 主板上开关共有 16 个，位置如上图所示，每个开关的引脚为开关下侧的编号，如最右侧的开关的引脚为 AA10。开关闭合（在上方）时，输入为 1，否则为 0。</p>
-<p>Arduino 子板上 LED 灯共有 8 个，每个 LED 等的引脚为灯上方的编号，如最左侧的子板 LED 的引脚为 W23。输出为 1 时，灯亮，否则灯灭。</p>
-<p>16 个开关和 8 个 LED 的引脚约束如右：<a href="../SW_LED.xdc">SW &amp; LED</a></p>
-<h2 id="_4">四    实验步骤</h2>
-<h3 id="1-3-8">1. 完成 3 - 8 译码器的原理图设计并仿真</h3>
-<p>依照理论课所学知识，仿照上一部分所示的译码器原理图，使用 Logisim Evolution 进行 3 - 8 译码器的原理图设计，并将生成的 Verilog 文件导入到 Vivado 工程。</p>
-<p>随后，使用上一部分所述的 Verilog 仿真激励来验证所设计的译码器模块功能正确。</p>
-<h3 id="2">2. 进行上板验证</h3>
-<p>仿照上一实验的引脚约束文件，编写这一实验的引脚约束文件，并将 3 - 8 译码器模块上板进行验证。</p>
-<h2 id="_5">五    实验提交要求</h2>
+<h2 id="_4">三    实验原理</h2>
+<h3 id="1-arduino">1. Arduino 子板七段数码管交互的使用</h3>
+<p>Arduino 子板的七段数码管有十二个引脚，其中八个引脚用于控制七段数码管显示什么图案，四个引脚分别作为四位七段数码管的使能信号，即分别控制四位七段数码管是否显示该图案。某一引脚置为 0 时，对应的 LED 灯亮；置为 1 时，对应的 LED 灯灭。如下图所示：</p>
+<p><img alt="子板七段数码管引脚示意图" src="../img/lab6/1.jpg" /></p>
+<p>各个接口的引脚约束如右：<a href="../SEG_AN.xdc">SEG_AN.xdc</a></p>
+<h2 id="_5">四    实验步骤</h2>
+<h3 id="1">1.分析七段数码管的真值表</h3>
+<p>对照实验原理中的图，补充完下列的真值表，当所需要展示的十六进制数为X时，a-g 六个引脚分别需要为什么值</p>
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>a</th>
+<th>b</th>
+<th>c</th>
+<th>d</th>
+<th>e</th>
+<th>f</th>
+<th>g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>E</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>F</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2logisimsimplemc14495">2.用Logisim作图的方式完成SimpleMC14495</h3>
+<p>根据七段数码管的真值表，我们可以直接对照作出电路图，但是这样会导致电路冗余繁杂，因此此次实验我们需要大家优化七段数码管的卡诺图，</p>
+<p>对照补全的七段数码管的真值表，分别分析引脚a-g的表达式，并根据他们的卡诺图优化表达式，并根据优化后的表达式使用 Logisim Evolution 进行原理图设计，并将生成的 Verilog 文件导入到 Vivado 工程。</p>
+<h3 id="3top">3.补全top模块</h3>
+<p>根据 verilog 语法文档的内容，补全 <a href="../top.v">top 模块</a>，并在 top 模块中调用导入的 SimpleMC14495 模块。（可以通过仿真进行验证，可选）</p>
+<h3 id="4">4.上板验证</h3>
+<p>补全约束文件，并上板测试。</p>
+<h2 id="_6">五    实验提交要求</h2>
 <ol>
 <li>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件、仿真激励文件和引脚约束文件的 zip 压缩包</li>
-<li>一份 PDF 格式的实验报告（无需封面），内容包含：<ul>
-<li>3 - 8 译码器的设计思路</li>
-<li>包含 Logisim 电路图中使用的集线器（splitter）及其性质（properties）的截图</li>
+<li>一份不超过 4 页的 PDF 格式的实验报告（无需封面），内容包含：<ul>
+<li>补全的七段数码管的真值表</li>
+<li>任意三个输出的卡诺图优化过程及其结果</li>
+<li>上板验证结果及分析</li>
 <li>思考题，包含在 Logisim 中实现如下两个电路原理图：<ol>
-<li>在 Logisim 中使用两个 2 - 4 译码器实现一个 3 - 8 译码器，2 - 4 译码器的实现如右：<a href="../2to4DEC.circ">2 to 4 decoder</a></li>
-<li>借助 3 - 8 译码器进行楼道灯控制。楼道灯控制是指：在一个楼道中，有三个开关控制一盏灯是否亮，且改变其中任意一个开关的状态时，灯的状态都会随之改变；例如，若某一时刻时，三个开关的状态分别是闭合、断开、闭合，而此时灯灭，则此时，将任意一个闭合的开关断开，或者将任意一个断开的开关闭合，则灯亮（即三个开关均闭合，或三个开关的状态分别为闭合、断开、断开，或三个开关的状态分别为断开、断开、闭合时，灯均亮）</li>
+<li>如何使用 Verilog 代码，行为描述的方法来设计 SimpleMC14495。</li>
+<li>在思考题1的基础上，如果要求加入一个 input rst，使得 rst = 0 时器件不受影响，rst = 1 时七段数码管保持不亮，应该如何改进。</li>
+<li>由于Arduino子板的七段数码管只有十二个引脚，所以四个七段数码管的显示都是一样的，如果要四个七段数码管分别显示不同数字，应当用什么样的方法（将你的思考写到报告中即可）</li>
 </ol>
 </li>
 </ul>
