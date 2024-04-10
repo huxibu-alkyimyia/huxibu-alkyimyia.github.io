@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../lab6/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../verilog/">
+        <link rel="next" href="../lab4/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>实验七 多路选择器设计及应用 - 2024 数字逻辑设计 实验指导</title>
+        <title>实验十 时序电路设计 - 2024 数字逻辑设计 实验指导</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              实验七  多路选择器设计及应用
+              实验十  时序电路设计
             
           </span>
         </div>
@@ -208,10 +208,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../lab10/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    实验十  时序电路设计
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -220,6 +240,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      一    实验目的
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -288,30 +337,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    实验七  多路选择器设计及应用
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lab7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -320,137 +349,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      一    实验目的
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      二    实验环境
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      三    实验原理
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="三 实验原理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-41" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 4选1多路选择器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 动态扫描显示器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      四    实验步骤
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四 实验步骤">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-41_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 设计4选1多路选择器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 设计动态扫描显示器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3top" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.补全top模块
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.上板验证
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      五    实验提交要求
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -510,108 +408,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      二    实验环境
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      三    实验原理
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="三 实验原理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-41" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 4选1多路选择器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 动态扫描显示器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      四    实验步骤
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四 实验步骤">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-41_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 设计4选1多路选择器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 设计动态扫描显示器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3top" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.补全top模块
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.上板验证
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      五    实验提交要求
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -627,159 +423,10 @@
                   
 
 
-<h1 id="_1">实验七  多路选择器设计及应用</h1>
+<h1 id="_1">实验十  时序电路设计</h1>
 <h2 id="_2">一    实验目的</h2>
 <ol>
-<li>了解 Sword 开发板的子板七段数码管交互</li>
-<li>熟悉了解多路选择器的原理</li>
-<li>用学会原理图的方式完成多路选择器</li>
-</ol>
-<h2 id="_3">二    实验环境</h2>
-<ol>
-<li>EDA 工具： Logisim Evolution、Vivado</li>
-<li>SWORD 开发板</li>
-<li>操作系统： Windows 10+</li>
-</ol>
-<h2 id="_4">三    实验原理</h2>
-<h3 id="1-41">1. 4选1多路选择器</h3>
-<p>4选1多路选择器的作用是，通过控制端S1、S2来控制输出端输出不同的输入端信号。</p>
-<table>
-<thead>
-<tr>
-<th>信息输入</th>
-<th>控制端</th>
-<th>选择输出</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I0 I1 I2 I3</td>
-<td>S1 S0</td>
-<td>输出项</td>
-</tr>
-<tr>
-<td>I0 I1 I2 I3</td>
-<td>0 0</td>
-<td>I0</td>
-</tr>
-<tr>
-<td>I0 I1 I2 I3</td>
-<td>0 1</td>
-<td>I1</td>
-</tr>
-<tr>
-<td>I0 I1 I2 I3</td>
-<td>1 0</td>
-<td>I2</td>
-</tr>
-<tr>
-<td>I0 I1 I2 I3</td>
-<td>1 1</td>
-<td>I3</td>
-</tr>
-</tbody>
-</table>
-<p><img alt="一位多选器" src="../img/lab7/1.png" /></p>
-<p>这里我们仅可以控制1位输入的4选1，如果我们需要实现多位输入的4选1，我们可以通过组合多个1位4选1多路选择器来实现。</p>
-<h3 id="2">2. 动态扫描显示器</h3>
-<p>由于一次仅能控制七段数码管显示一个数字，因此我们无法直接控制四个数码管同时展示同一个数字。</p>
-<p>如果我们需要控制四个数码管分别显示不同的数字，我们应该怎么做呢。</p>
-<p>因为在数码管上显示数字后不会马上消失，我们利用这点，通过控制使能，使得每次仅亮一个一个数码管，并通过用时钟来作为选择器，不断重复这个过程，类似于在不断的扫描四个数码管，并显示不同的数字，使得最后呈现四个数码管同时展示不同数字的效果。</p>
-<table>
-<thead>
-<tr>
-<th>时间</th>
-<th>使能</th>
-<th>展示数字</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0001</td>
-<td>N0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0010</td>
-<td>N1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>0100</td>
-<td>N2</td>
-</tr>
-<tr>
-<td>3</td>
-<td>1000</td>
-<td>N3</td>
-</tr>
-<tr>
-<td>4</td>
-<td>0001</td>
-<td>N0</td>
-</tr>
-<tr>
-<td>5</td>
-<td>0010</td>
-<td>N1</td>
-</tr>
-<tr>
-<td>...</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>动态扫描显示器的原理图如下</p>
-<p><img alt="displaySync" src="../img/lab7/3.png" /></p>
-<p>请同学们在作图的时候思考，为什么这个动态扫描显示器可以做到扫描的功能。该模块的输入与输出解释如下：</p>
-<p><strong>输入</strong></p>
-<p>point：分别控制四个小数点是否亮</p>
-<p>rst：控制时钟信号是否置零，正电平置零</p>
-<p>clk：时钟信号，频率为100MHz</p>
-<p>HEXS：16位，分成四组四位数，每组控制一个数码管的显示</p>
-<p>EN：数码管的使能，全部置1使得所有数码管均显示</p>
-<p><strong>输出</strong></p>
-<p>SEG：控制当前七位数码管与小数的显示</p>
-<p>AN：控制四个数码管的使能</p>
-<h2 id="_5">四    实验步骤</h2>
-<h3 id="1-41_1">1. 设计4选1多路选择器</h3>
-<p>根据实验原理的原理图，设计4选1多路选择器（4b和1b）。</p>
-<h3 id="2_1">2. 设计动态扫描显示器</h3>
-<p>使用 verilog 代码设计 clock_div 模块：该模块输出一个32位二进制数clkd，以0为初始值，并且每个时钟周期（clk正边沿）加一，在MUX等模块的SW输入端口，我们使用clkd[19:18]两个bit作为选择信号</p>
-<p>根据动态扫描显示器的原理图，调用之前完成的4选1多路选择器，使用 Verilog 代码完成动态扫描显示器模块的设计</p>
-<h3 id="3top">3.补全top模块</h3>
-<p>我们提供了 <a href="../top7.v">top 模块</a>，只需要保证模块名一致即可。</p>
-<p>我们提供了一个 <a href="../Anti_jitter.v">Anti_jitter.v</a> 的代码，它用于处理rst信号，直接将它导入到 Design Sources 中即可。</p>
-<p>（完成后通过<a href="../topSim7.v">仿真测试</a>，可选）</p>
-<h3 id="4">4.上板验证</h3>
-<p>补全约束文件，并上板测试。</p>
-<p>新增相关引脚约束如下：</p>
-<pre><code># clk
-set_property PACKAGE_PIN AC18 [get_ports clk]
-set_property IOSTANDARD LVCMOS18 [get_ports clk]
-
-# BTNY
-set_property PACKAGE_PIN V18 [get_ports {BTNY}]
-set_property IOSTANDARD LVCMOS18 [get_ports {BTNY}]
-set_property PACKAGE_PIN W16 [get_ports {BTNY}]
-set_property IOSTANDARD LVCMOS18 [get_ports {BTNY}]
-</code></pre>
-<h2 id="_6">五    实验提交要求</h2>
-<ol>
-<li>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件、仿真激励文件和引脚约束文件的 zip 压缩包</li>
-<li>一份不超过 3 页的 PDF 格式的实验报告（无需封面），内容包含：<ul>
-<li>多路选择器的设计思路以及一位四选一多路选择器的电路原理图截图。</li>
-<li>上板验证结果以及分析</li>
-<li>思考题，包含：<ol>
-<li>理解动态扫描原理的前提下，结合输入与输出，请解释为什么给出的动态扫描显示器的原理图可以做到动态扫描</li>
-<li>clock_div模块的作用是什么，为什么选用 clk[19:18] 作为SW信号输入</li>
-<li>如果要实现16选1多路选择器，控制端应为几位，如果用Verilog代码来实现，哪个语法是最佳写法，请简单说明</li>
-</ol>
-</li>
-</ul>
-</li>
+<li></li>
 </ol>
 
 
