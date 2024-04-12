@@ -32,7 +32,7 @@ module topSim;
     initial begin
         clk = 1'b1;
         SW = 16'hABCD;
-        BTNY = 1'b0;
+        BTNY = 1'b1;
     end
     
     always begin
