@@ -43,8 +43,6 @@
       
     
     
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
-    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -698,18 +696,18 @@
 </ol>
 <h2 id="_3">三    实验原理</h2>
 <h3 id="1-1">1. 1位全加器</h3>
-<p>1位全加器有三个输入端：数据位 <span class="arithmatex">\({A_i}\)</span> 和 <span class="arithmatex">\({B_i}\)</span>，低位进位输入 <span class="arithmatex">\({C_i}\)</span></p>
-<p>两个输出位：全加和 <span class="arithmatex">\({S_i}\)</span>，进位输出 <span class="arithmatex">\({C_{i+1}}\)</span></p>
-<p><span class="arithmatex">\({S_i = A_i \bigotimes B_i \bigotimes C_i}\)</span></p>
-<p><span class="arithmatex">\({C_{i+1}=A_i B_i + B_iC_i + C_i A_i}\)</span></p>
+<p>1位全加器有三个输入端：数据位 ${A_i}$ 和 ${B_i}$，低位进位输入 ${C_i}$</p>
+<p>两个输出位：全加和 ${S_i}$，进位输出 ${C_{i+1}}$</p>
+<p>${S_i = A_i \bigotimes B_i \bigotimes C_i}$</p>
+<p>${C_{i+1}=A_i B_i + B_iC_i + C_i A_i}$</p>
 <table>
 <thead>
 <tr>
-<th><span class="arithmatex">\(A_i\)</span></th>
-<th><span class="arithmatex">\(B_i\)</span></th>
-<th><span class="arithmatex">\(C_i\)</span></th>
-<th><span class="arithmatex">\(S_i\)</span></th>
-<th><span class="arithmatex">\(C_{i+1}\)</span></th>
+<th>$A_i$</th>
+<th>$B_i$</th>
+<th>$C_i$</th>
+<th>$S_i$</th>
+<th>$C_{i+1}$</th>
 </tr>
 </thead>
 <tbody>
@@ -798,35 +796,35 @@
 <tbody>
 <tr>
 <td>3‘b000</td>
-<td>加法</td>
+<td>加法：返回a+b</td>
 </tr>
 <tr>
 <td>3’b001</td>
-<td>减法</td>
+<td>减法：返回a-b</td>
 </tr>
 <tr>
 <td>3‘b010</td>
-<td>按位与</td>
+<td>按位与：返回a和b按位取与的结果</td>
 </tr>
 <tr>
 <td>3’b011</td>
-<td>按位或</td>
+<td>按位或：返回a和b按位取或的结果</td>
 </tr>
 <tr>
 <td>3‘b100</td>
-<td>左移</td>
+<td>左移：返回a左移b位的结果</td>
 </tr>
 <tr>
 <td>3’b101</td>
-<td>右移</td>
+<td>右移：返回a右移b位的结果</td>
 </tr>
 <tr>
 <td>3‘b110</td>
-<td>逻辑小于</td>
+<td>逻辑小于：如果a小于b返回1，否则返回0</td>
 </tr>
 <tr>
 <td>3’b111</td>
-<td>按位异或</td>
+<td>按位异或：返回a和b按位取异或的结果</td>
 </tr>
 </tbody>
 </table>
@@ -923,12 +921,6 @@ module top(
     
     
       <script src="../assets/javascripts/bundle.e1c3ead8.min.js"></script>
-      
-        <script src="../katex.js"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   </body>

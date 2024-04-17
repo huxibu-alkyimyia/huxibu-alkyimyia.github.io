@@ -41,8 +41,6 @@
       
     
     
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
-    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1137,7 +1135,7 @@ end
 <p>在实际的设计中，我们很多时候需要存储或者传输的数据位宽不为 1，虽然我们可以通过创建多个 wire 或者 reg 来实现，但是这样既不利于整个工程的管理，也会带来很大的工作量，因此在 Verilog 中有向量的概念，可以定义位宽大于1的 wire 或者 reg 。</p>
 <p>我们可以发现，在 Verilog 代码中，一个线网存在其实就是为其命名，创建这个 wire 数据类型，以便于后面我们再对其进行各类操作，寄存器也是如此。
 我们可以将向量理解为同时创建多个 wire 或者 reg ，并命名为同一个名字，同时编号区分。
-譬如位宽为4的线网 "wire [3:0] line"，你可以理解为一捆共四根线网被绑定在一起，且有序号区分，你可以通过 "line[n]<span class="arithmatex">\(n=0,1,2,3\)</span>" 来定位到不同的线网。</p>
+譬如位宽为4的线网 "wire [3:0] line"，你可以理解为一捆共四根线网被绑定在一起，且有序号区分，你可以通过 "line[n](n=0,1,2,3)" 来定位到不同的线网。</p>
 <pre><code>reg [3:0]      counter ;    //声明4bit位宽的寄存器counter
 wire [32-1:0]  gpio_data;   //声明32bit位宽的线型变量gpio_data
 wire [8:2]     addr ;       //声明7bit位宽的线型变量addr，位宽范围为8:2
@@ -1688,12 +1686,6 @@ endmodule
     
     
       <script src="../assets/javascripts/bundle.e1c3ead8.min.js"></script>
-      
-        <script src="../katex.js"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
     
   </body>
