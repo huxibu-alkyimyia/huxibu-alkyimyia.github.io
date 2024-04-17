@@ -299,7 +299,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      一    实验目的
+      一 实验目的
     </span>
   </a>
   
@@ -308,7 +308,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      二    实验环境
+      二 实验环境
     </span>
   </a>
   
@@ -317,7 +317,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      三    实验原理
+      三 实验原理
     </span>
   </a>
   
@@ -325,7 +325,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-arduino" class="md-nav__link">
+  <a href="#1_arduino" class="md-nav__link">
     <span class="md-ellipsis">
       1. Arduino 子板七段数码管交互的使用
     </span>
@@ -341,7 +341,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      四    实验步骤
+      四 实验步骤
     </span>
   </a>
   
@@ -392,7 +392,7 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      五    实验提交要求
+      五 实验提交要求
     </span>
   </a>
   
@@ -495,7 +495,7 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      一    实验目的
+      一 实验目的
     </span>
   </a>
   
@@ -504,7 +504,7 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      二    实验环境
+      二 实验环境
     </span>
   </a>
   
@@ -513,7 +513,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      三    实验原理
+      三 实验原理
     </span>
   </a>
   
@@ -521,7 +521,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-arduino" class="md-nav__link">
+  <a href="#1_arduino" class="md-nav__link">
     <span class="md-ellipsis">
       1. Arduino 子板七段数码管交互的使用
     </span>
@@ -537,7 +537,7 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      四    实验步骤
+      四 实验步骤
     </span>
   </a>
   
@@ -588,7 +588,7 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      五    实验提交要求
+      五 实验提交要求
     </span>
   </a>
   
@@ -609,26 +609,26 @@
                   
 
 
-<h1 id="_1">实验六  子板七段数码管交互的应用</h1>
-<h2 id="_2">一    实验目的</h2>
+<h1 id="_1">实验六  子板七段数码管交互的应用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">一    实验目的<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ol>
 <li>了解 Sword 开发板的子板七段数码管交互</li>
 <li>熟悉通过卡诺图进行组合逻辑设计的过程</li>
 <li>初步熟悉 Verilog </li>
 </ol>
-<h2 id="_3">二    实验环境</h2>
+<h2 id="_3">二    实验环境<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
 <li>EDA 工具： Logisim Evolution、Vivado</li>
 <li>SWORD 开发板</li>
 <li>操作系统： Windows 10+</li>
 </ol>
-<h2 id="_4">三    实验原理</h2>
-<h3 id="1-arduino">1. Arduino 子板七段数码管交互的使用</h3>
+<h2 id="_4">三    实验原理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1_arduino">1. Arduino 子板七段数码管交互的使用<a class="headerlink" href="#1_arduino" title="Permanent link">&para;</a></h3>
 <p>Arduino 子板的七段数码管有十二个引脚，其中八个引脚用于控制七段数码管显示什么图案，四个引脚分别作为四位七段数码管的使能信号，即分别控制四位七段数码管是否显示该图案。某一引脚置为 0 时，对应的 LED 灯亮；置为 1 时，对应的 LED 灯灭。如下图所示：</p>
 <p><img alt="子板七段数码管引脚示意图" src="../img/lab6/1.jpg" /></p>
 <p>各个接口的引脚约束如右：<a href="../SEG_AN.xdc">SEG_AN.xdc</a></p>
-<h2 id="_5">四    实验步骤</h2>
-<h3 id="1">1.分析七段数码管的真值表</h3>
+<h2 id="_5">四    实验步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1">1.分析七段数码管的真值表<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <p>对照实验原理中的图，补充完下列的真值表，当所需要展示的十六进制数为X时，a-g 六个引脚分别需要为什么值</p>
 <table>
 <thead>
@@ -806,14 +806,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="2logisimsimplemc14495">2.用Logisim作图的方式完成SimpleMC14495</h3>
+<h3 id="2logisimsimplemc14495">2.用Logisim作图的方式完成SimpleMC14495<a class="headerlink" href="#2logisimsimplemc14495" title="Permanent link">&para;</a></h3>
 <p>根据七段数码管的真值表，我们可以直接对照作出电路图，但是这样会导致电路冗余繁杂，因此此次实验我们需要大家优化七段数码管的卡诺图，</p>
 <p>对照补全的七段数码管的真值表，分别分析引脚a-g的表达式，并根据他们的卡诺图优化表达式，并根据优化后的表达式使用 Logisim Evolution 进行原理图设计，并将生成的 Verilog 文件导入到 Vivado 工程。</p>
-<h3 id="3top">3.补全top模块</h3>
+<h3 id="3top">3.补全top模块<a class="headerlink" href="#3top" title="Permanent link">&para;</a></h3>
 <p>根据 verilog 语法文档的内容，补全 <a href="../top6.v">top 模块</a>，并在 top 模块中调用导入的 SimpleMC14495 模块。（可以通过仿真进行验证，可选）</p>
-<h3 id="4">4.上板验证</h3>
+<h3 id="4">4.上板验证<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <p>补全约束文件，并上板测试。</p>
-<h2 id="_6">五    实验提交要求</h2>
+<h2 id="_6">五    实验提交要求<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ol>
 <li>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件、仿真激励文件和引脚约束文件的 zip 压缩包</li>
 <li>一份不超过 4 页的 PDF 格式的实验报告（无需封面），内容包含：<ul>
@@ -879,6 +879,8 @@
     
     
       <script src="../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>
