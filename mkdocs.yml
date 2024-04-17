@@ -3,13 +3,28 @@ theme:
   name: material
 
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
+  - markdown.extensions.codehilite
+  - markdown.extensions.extra
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: True
+      separator: "_"
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.fenced_code
+  - markdown.extensions.footnotes
+  - markdown.extensions.tables
+  - markdown.extensions.nl2br
+  - markdown.extensions.smarty
+  - markdown.extensions.wikilinks
+  - markdown.extensions.md_in_html
+  # - markdown.extensions.tidy
+  - markdown.extensions.meta
 
 extra_javascript:
-  - katex.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
 
-extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+# markdown_extensions:
+#   - markdown.extensions.extra
+#   - markdown.extensions.mathjax
