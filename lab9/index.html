@@ -753,22 +753,22 @@
 <li>
 <p>使用Verilog对本实验提供的正边沿维持阻塞型D触发器进行仿真验证。</p>
 <p>提示：</p>
-<p>```verilog<br />
-initial begin<br />
-  S = 1;<br />
-  R = 1;<br />
-  D = 0; #150;<br />
-  D = 1; #150;<br />
-end</p>
-<p>always begin<br />
-  C=0; #50;<br />
-  C=1; #50;<br />
-end<br />
-```</p>
 </li>
 </ol>
 </li>
 </ol>
+<div class="codehilite"><pre><span></span><code><span class="k">initial</span><span class="w"> </span><span class="k">begin</span>
+<span class="w">  </span><span class="n">S</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span>
+<span class="w">  </span><span class="n">R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span>
+<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">150</span><span class="p">;</span>
+<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">150</span><span class="p">;</span>
+<span class="k">end</span>
+
+<span class="k">always</span><span class="w"> </span><span class="k">begin</span>
+<span class="w">  </span><span class="n">C</span><span class="o">=</span><span class="mh">0</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">50</span><span class="p">;</span>
+<span class="w">  </span><span class="n">C</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">50</span><span class="p">;</span>
+<span class="k">end</span>
+</code></pre></div>
 
 
 
