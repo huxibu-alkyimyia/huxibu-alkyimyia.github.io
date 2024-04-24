@@ -97,18 +97,18 @@ D锁存器的缺点：存在空翻现象——如果D锁存器直接用在时序
 
         提示：
 
-        ```verilog
-        initial begin
-          S = 1;
-          R = 1;
-          D = 0; #150;
-          D = 1; #150;
-        end
+```verilog
+initial begin
+  S = 1;
+  R = 1;
+  D = 0; #150;
+  D = 1; #150;
+end
         
-        always begin
-          C=0; #50;
-          C=1; #50;
-        end
-        ```
+always begin
+  C=0; #50;
+  C=1; #50;
+end
+```
 
         
