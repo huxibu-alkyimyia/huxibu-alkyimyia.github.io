@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../lab7/">
+        <link rel="prev" href="../lab8/">
       
       
-        <link rel="next" href="../lab9/">
+        <link rel="next" href="../verilog/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>实验八 加减法器与ALU基本原理与设计 - 2024 数字逻辑设计 实验指导</title>
+        <title>实验九 锁存器与触发器基本原理 - 2024 数字逻辑设计 实验指导</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#alu" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              实验八  加减法器与ALU基本原理与设计
+              实验九 锁存器与触发器基本原理
             
           </span>
         </div>
@@ -288,6 +288,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验八  加减法器与ALU基本原理与设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -304,7 +324,7 @@
           
   
   <span class="md-ellipsis">
-    实验八  加减法器与ALU基本原理与设计
+    实验九 锁存器与触发器基本原理
   </span>
   
 
@@ -315,7 +335,7 @@
         
   
   <span class="md-ellipsis">
-    实验八  加减法器与ALU基本原理与设计
+    实验九 锁存器与触发器基本原理
   </span>
   
 
@@ -337,7 +357,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       一 实验目的
     </span>
@@ -346,7 +366,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       二 实验环境
     </span>
@@ -355,7 +375,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       三 实验原理
     </span>
@@ -365,36 +385,37 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 1位全加器
+      1.锁存器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.锁存器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11_sr" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 SR锁存器
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#12_srcsr" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 多位串行进位加法器与多位串行进位加减器
+      1.2 门控SR(CSR)锁存器
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#13_d" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 加减法器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_alu" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. ALU的基本原理与设计
+      1.3 D锁存器
     </span>
   </a>
   
@@ -404,59 +425,37 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      四 实验步骤
+      2.触发器
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="四 实验步骤">
+    <nav class="md-nav" aria-label="2.触发器">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#21sr" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 设计一位全加器
+      2.1SR主从触发器
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#22_d" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 设计多位串行加减器
+      2.2 正边沿维持阻塞型D触发器
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3alu" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.设计算术逻辑单元(ALU)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4top" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.完成top模块
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.上板验证
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -468,6 +467,15 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
+      四 实验步骤
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
       五 实验提交要求
     </span>
   </a>
@@ -478,26 +486,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lab9/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    实验九 锁存器与触发器基本原理
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -549,7 +537,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       一 实验目的
     </span>
@@ -558,7 +546,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       二 实验环境
     </span>
@@ -567,7 +555,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       三 实验原理
     </span>
@@ -577,36 +565,37 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 1位全加器
+      1.锁存器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.锁存器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11_sr" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 SR锁存器
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#12_srcsr" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 多位串行进位加法器与多位串行进位加减器
+      1.2 门控SR(CSR)锁存器
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#13_d" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 加减法器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_alu" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. ALU的基本原理与设计
+      1.3 D锁存器
     </span>
   </a>
   
@@ -616,59 +605,37 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      四 实验步骤
+      2.触发器
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="四 实验步骤">
+    <nav class="md-nav" aria-label="2.触发器">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#21sr" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 设计一位全加器
+      2.1SR主从触发器
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#22_d" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 设计多位串行加减器
+      2.2 正边沿维持阻塞型D触发器
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3alu" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.设计算术逻辑单元(ALU)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4top" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.完成top模块
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.上板验证
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -679,6 +646,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      四 实验步骤
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       五 实验提交要求
     </span>
@@ -701,196 +677,96 @@
                   
 
 
-<h1 id="alu">实验八  加减法器与ALU基本原理与设计<a class="headerlink" href="#alu" title="Permanent link">&para;</a></h1>
-<h2 id="_1">一    实验目的<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="_1">实验九 锁存器与触发器基本原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">一 实验目的<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ol>
-<li>了解 Sword 开发板的子板七段数码管交互</li>
-<li>掌握加减法器的工作原理和逻辑功能</li>
-<li>掌握ALU的设计方法</li>
+<li>掌握锁存器与触发器构成的条件和工作原理</li>
+<li>掌握锁存器与触发器的区别</li>
+<li>掌握基本SR锁存器、门控SR锁存器、D锁存器、SR锁存器、D触发器的基本功能</li>
+<li>掌握基本SR锁存器、门控SR锁存器、D锁存器、SR锁存器存在的时序问题</li>
 </ol>
-<h2 id="_2">二    实验环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_3">二 实验环境<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
-<li>EDA 工具： Logisim Evolution、Vivado</li>
-<li>SWORD 开发板</li>
+<li>EDA 工具： Logisim Evolution、Vivado（可选）</li>
 <li>操作系统： Windows 10+</li>
 </ol>
-<h2 id="_3">三    实验原理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="1_1">1. 1位全加器<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
-<p>1位全加器有$$三个输入端：数据位 A_i 和 B_i，低位进位输入 C_i$$</p>
-<p>$$两个输出位：全加和 {S_i}，进位输出 C_{i+1}$$</p>
-<p>$${S_i = A_i \bigotimes B_i \bigotimes C_i}$$</p>
-<p>$${C_{i+1}=A_i B_i + B_iC_i + C_i A_i}$$</p>
-<table>
-<thead>
-<tr>
-<th>$A_i$</th>
-<th>$B_i$</th>
-<th>$C_i$</th>
-<th>$S_i$</th>
-<th>$C_{i+1}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3 id="2">2. 多位串行进位加法器与多位串行进位加减器<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p>多位全加器可由一位全加器将进位串接构成</p>
-<p>高位进位生成速度慢，位数越多时间越长</p>
-<p><img alt="adder1" src="../img/lab8/1.png" /></p>
-<p>而多位串行进位加减器用负数补码加法实现，减数当作负数求补码</p>
-<p>共用加法器，用“异或”门控制求反，低位进位C0为1</p>
-<p><img alt="adder2" src="../img/lab8/2.png" /></p>
-<h3 id="3">3. 加减法器<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<p>在上面我们已经完成一位全加器的设计，同时也了解了多位串行进位加法器和全减器的设计，我们发现如果将“异或”门加入一位全加器的设计中，可以让我们更简便的实现多位串行加减器。</p>
-<p><img alt="adder3" src="../img/lab8/3.png" /></p>
-<p><img alt="adder4" src="../img/lab8/4.png" /></p>
-<h3 id="4_alu">4. ALU的基本原理与设计<a class="headerlink" href="#4_alu" title="Permanent link">&para;</a></h3>
-<p>ALU是CPU中的重要组件，ALU可以进行多种运算，通过控制端来进行控制，对两个输入端进行不同的运算，并得出结果。</p>
-<p>在ALU模块中，我们将多个运算单元组合起来，并通过lab7的多路选择器对输出进行选择，所以在实际电路设计中，ALU会计算所有可能的结果，并最终只输出控制端选择的那个。</p>
-<p>Verilog代码设计思想是行为描述设计，刚刚对ALU的行为进行描述，请根据刚刚的描述以及下面给出的模块头，设计一个支持加、减、按位与、按位或、按位异或、左移、右移、逻辑小于运算的ALU组件。</p>
-<p>要求：模块头与所给一致，加、减部分要求调用之前设计的多位串行加减法器进行运算，运算符所控制的结果为：</p>
-<p>提示：在Verilog中，存在运算符，多路选择器的行为与case语句一致。</p>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>ALU行为</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3‘b000</td>
-<td>加法：返回a+b</td>
-</tr>
-<tr>
-<td>3’b001</td>
-<td>减法：返回a-b</td>
-</tr>
-<tr>
-<td>3‘b010</td>
-<td>按位与：返回a和b按位取与的结果</td>
-</tr>
-<tr>
-<td>3’b011</td>
-<td>按位或：返回a和b按位取或的结果</td>
-</tr>
-<tr>
-<td>3‘b100</td>
-<td>左移：返回a左移b位的结果</td>
-</tr>
-<tr>
-<td>3’b101</td>
-<td>右移：返回a右移b位的结果</td>
-</tr>
-<tr>
-<td>3‘b110</td>
-<td>逻辑小于：如果a小于b返回1，否则返回0</td>
-</tr>
-<tr>
-<td>3’b111</td>
-<td>按位异或：返回a和b按位取异或的结果</td>
-</tr>
-</tbody>
-</table>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 模块接口定义</span>
-<span class="n">module</span><span class="w"> </span><span class="n">MyAlu</span><span class="p">(</span>
-<span class="w">    </span><span class="nb">input</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">A</span><span class="p">,</span>
-<span class="w">    </span><span class="nb">input</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">B</span><span class="p">,</span>
-<span class="w">    </span><span class="nb">input</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">op</span><span class="p">,</span>
-<span class="w">    </span><span class="n">output</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">res</span>
-<span class="w">    </span><span class="p">);</span>
-</code></pre></div>
-
-<h2 id="_4">四    实验步骤<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="1">1. 设计一位全加器<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p>根据给出的真值表和表达式，用Verilog来设计全加器，并思考这样设计全加器和对照真值表用作图的方式设计有何区别。（行为描述设计和结构描述设计的区别）</p>
-<h3 id="2_1">2. 设计多位串行加减器<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
-<p>根据原理图，调用之前设计的一位全加器，用verilog设计四位串行加减器</p>
-<h3 id="3alu">3.设计算术逻辑单元(ALU)<a class="headerlink" href="#3alu" title="Permanent link">&para;</a></h3>
-<p>根据所给的ALU行为描述与提示，按要求用Verilog代码设计ALU模型。</p>
-<h3 id="4top">4.完成top模块<a class="headerlink" href="#4top" title="Permanent link">&para;</a></h3>
-<p>完成top模块，并在top模块中调用导入的动态扫描显示器模块。（需要通过仿真进行验证）</p>
-<p>请在七段数码管的第一个数字（最右边）显示A，第二个数字显示B，第三个数字显示ALU计算结果</p>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 接口定义参考（提示：A=SW[3:0], B=SW[7:4], op=SW[10:8], 其他同lab7）</span>
-<span class="n">module</span><span class="w"> </span><span class="n">top</span><span class="p">(</span>
-<span class="w">    </span><span class="nb">input</span><span class="w"> </span><span class="n">clk</span><span class="p">,</span>
-<span class="w">    </span><span class="nb">input</span><span class="w"> </span><span class="p">[</span><span class="mi">10</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">SW</span><span class="p">,</span>
-<span class="w">    </span><span class="nb">input</span><span class="w"> </span><span class="n">BTNY</span><span class="p">,</span>
-<span class="w">    </span><span class="n">output</span><span class="w"> </span><span class="p">[</span><span class="mi">7</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">SEG</span><span class="p">,</span>
-<span class="w">    </span><span class="n">output</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="n">AN</span>
-<span class="w">    </span><span class="p">);</span>
-</code></pre></div>
-
-<h3 id="5">5.上板验证<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
-<p>完成约束文件，并上板测试。</p>
-<h2 id="_5">五    实验提交要求<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件、仿真激励文件和引脚约束文件的 zip 压缩包</li>
-<li>一份不超过 3 页的 PDF 格式的实验报告（无需封面），内容包含：<ul>
-<li>加法器、加减法器和ALU的设计思路</li>
-<li>上板验证结果以及分析</li>
-<li>思考题，包含：<ol>
-<li>用作图的方式设计一位全加器，请从设计思路、实现方式两个角度比较行为描述和结构描述两者的区别。</li>
-<li>如果现在需要将操作端位宽改为4位，并使ALU多支持4种运算，请问该如何修改Verilog代码？如果新增一位输入rst，使rst=0时正常输出，rst=1时输出保持为0，该如何修改现有的Verilog代码。</li>
-</ol>
-</li>
+<h2 id="_4">三 实验原理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h4 id="1">1.锁存器<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<p>锁存器(Latch)是一种对脉冲电平敏感的存储单元电路，它们可以在特定输入脉冲电平作用下改变状态。锁存，就是把信号暂存以维持某种电平状态。锁存器的最主要作用是缓存，其次完成高速的控制器与慢速的外设的不同步问题，再其次是解决驱动的问题，最后是解决一个 I/O 口既能输出也能输入的问题。锁存器是利用电平控制数据的输入，它包括不带使能控制的锁存器和带使能控制的锁存器。</p>
+<p>构成锁存器的充分条件：</p>
+<ul>
+<li>能长期保持给定的某个稳定状态</li>
+<li>有两个稳定状态：0、1</li>
 </ul>
+<p>在一定条件下能随时改变逻辑状态，即：置1或置0</p>
+<p>最基本的锁存器有：SR锁存器、D锁存器</p>
+<p>锁存器有两个稳定状态，又称双稳态电路</p>
+<h5 id="11_sr">1.1 SR锁存器<a class="headerlink" href="#11_sr" title="Permanent link">&para;</a></h5>
+<p>将两个具有2输入端的反向逻辑器件的输出与输入端交叉连起来，另一个输入端作为外部信息输出端，就构成最简单的SR锁存器：<img alt="截屏2024-04-24 11.58.05" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 11.58.05.png" /></p>
+<p><img alt="截屏2024-04-24 11.58.31" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 11.58.31.png" /></p>
+<p>这里给出了SR锁存器的两种实现，本次实验可以取任意一种实现。</p>
+<h5 id="12_srcsr">1.2 门控SR(CSR)锁存器<a class="headerlink" href="#12_srcsr" title="Permanent link">&para;</a></h5>
+<p>在SR锁存器上添加与门作为使能：</p>
+<p><img alt="截屏2024-04-24 12.00.05" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.00.05.png" /></p>
+<h5 id="13_d">1.3 D锁存器<a class="headerlink" href="#13_d" title="Permanent link">&para;</a></h5>
+<p>以上两种基本的锁存器都存在一个问题：对于S/R某种输入组合存在不确定状态。</p>
+<p>为了消除不确定状态，一种解决方法是限定锁存器的输入状态：</p>
+<p><img alt="截屏2024-04-24 12.01.59" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.01.59.png" /></p>
+<p>只需一个输入端D就可以控制输入信号，相当于强制使原来SR的输入信号互为反向，避免了SR相同电平下未定义状态的问题。</p>
+<p>D锁存器的缺点：存在空翻现象——如果D锁存器直接用在时序电路中作为状态存储元件，当使能控制信号有效时，会导致该元件内部的状态值随时多次改变，而不是保持所需的原始状态值。</p>
+<h4 id="2">2.触发器<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<p>为了解决锁存器存在的以上问题，实际电路中往往使用触发器。</p>
+<h5 id="21sr">2.1SR主从触发器<a class="headerlink" href="#21sr" title="Permanent link">&para;</a></h5>
+<p>由两个门控S-R锁存器串联构成，第二个锁存器的时钟通过反相器取反。当C=1时，输入信号进入第一个锁存器（主锁存器）；当C=0时，第二个锁存器（从锁存器）改变输出；从输入到输出的通路被不同的时钟信号值(C = 1和 C = 0)所断开。</p>
+<p><img alt="截屏2024-04-24 12.52.12" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.52.12.png" /></p>
+<h5 id="22_d">2.2 正边沿维持阻塞型D触发器<a class="headerlink" href="#22_d" title="Permanent link">&para;</a></h5>
+<p>具体实现如下所示：</p>
+<p><img alt="截屏2024-04-24 12.53.53" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.53.53.png" /></p>
+<h2 id="_5">四 实验步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>实现基本SR锁存器，验证功能和存在的时序问题</li>
+<li>实现门控SR锁存器，并验证功能和存在的时序问题</li>
+<li>实现D锁存器，并验证功能和存在的时序问题</li>
+<li>实现SR主从触发器，并验证功能和存在的时序问题</li>
+<li>实现D触发器，并验证功能</li>
+</ol>
+<h2 id="_6">五 实验提交要求<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件（思考题）、仿真激励文件（思考题）的 zip 压缩包</p>
+</li>
+<li>
+<p>一份不超过 3 页的 PDF 格式的实验报告（无需封面），内容包含：</p>
+</li>
+<li>
+<p>锁存器、触发器的设计思路</p>
+</li>
+<li>
+<p>验证结果以及分析</p>
+</li>
+<li>
+<p>思考题，包含：</p>
+<ol>
+<li>
+<p>Verilog语句中触发使用的是“always”语句，谈谈“always”语句和本实验的联系，以及正负边沿触发的实现思路。</p>
+</li>
+<li>
+<p>使用Verilog对本实验提供的正边沿维持阻塞型D触发器进行仿真验证。</p>
+<p>提示：</p>
+<p>```verilog<br />
+initial begin<br />
+  S = 1;<br />
+  R = 1;<br />
+  D = 0; #150;<br />
+  D = 1; #150;<br />
+end</p>
+<p>always begin<br />
+  C=0; #50;<br />
+  C=1; #50;<br />
+end<br />
+```</p>
+</li>
+</ol>
 </li>
 </ol>
 
