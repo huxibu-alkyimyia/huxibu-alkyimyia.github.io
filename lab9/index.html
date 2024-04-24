@@ -702,26 +702,26 @@
 <p>最基本的锁存器有：SR锁存器、D锁存器</p>
 <p>锁存器有两个稳定状态，又称双稳态电路</p>
 <h5 id="11_sr">1.1 SR锁存器<a class="headerlink" href="#11_sr" title="Permanent link">&para;</a></h5>
-<p>将两个具有2输入端的反向逻辑器件的输出与输入端交叉连起来，另一个输入端作为外部信息输出端，就构成最简单的SR锁存器：<img alt="截屏2024-04-24 11.58.05" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 11.58.05.png" /></p>
-<p><img alt="截屏2024-04-24 11.58.31" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 11.58.31.png" /></p>
+<p>将两个具有2输入端的反向逻辑器件的输出与输入端交叉连起来，另一个输入端作为外部信息输出端，就构成最简单的SR锁存器：<img alt="截屏2024-04-24 11.58.05" src="../img/lab9/6.png" /></p>
+<p><img alt="截屏2024-04-24 11.58.31" src="../img/lab9/5.png" /></p>
 <p>这里给出了SR锁存器的两种实现，本次实验可以取任意一种实现。</p>
 <h5 id="12_srcsr">1.2 门控SR(CSR)锁存器<a class="headerlink" href="#12_srcsr" title="Permanent link">&para;</a></h5>
 <p>在SR锁存器上添加与门作为使能：</p>
-<p><img alt="截屏2024-04-24 12.00.05" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.00.05.png" /></p>
+<p><img alt="截屏2024-04-24 12.00.05" src="img/lab4.png" /></p>
 <h5 id="13_d">1.3 D锁存器<a class="headerlink" href="#13_d" title="Permanent link">&para;</a></h5>
 <p>以上两种基本的锁存器都存在一个问题：对于S/R某种输入组合存在不确定状态。</p>
 <p>为了消除不确定状态，一种解决方法是限定锁存器的输入状态：</p>
-<p><img alt="截屏2024-04-24 12.01.59" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.01.59.png" /></p>
+<p><img alt="截屏2024-04-24 12.01.59" src="../img/lab9/3.png" /></p>
 <p>只需一个输入端D就可以控制输入信号，相当于强制使原来SR的输入信号互为反向，避免了SR相同电平下未定义状态的问题。</p>
 <p>D锁存器的缺点：存在空翻现象——如果D锁存器直接用在时序电路中作为状态存储元件，当使能控制信号有效时，会导致该元件内部的状态值随时多次改变，而不是保持所需的原始状态值。</p>
 <h4 id="2">2.触发器<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
 <p>为了解决锁存器存在的以上问题，实际电路中往往使用触发器。</p>
 <h5 id="21sr">2.1SR主从触发器<a class="headerlink" href="#21sr" title="Permanent link">&para;</a></h5>
 <p>由两个门控S-R锁存器串联构成，第二个锁存器的时钟通过反相器取反。当C=1时，输入信号进入第一个锁存器（主锁存器）；当C=0时，第二个锁存器（从锁存器）改变输出；从输入到输出的通路被不同的时钟信号值(C = 1和 C = 0)所断开。</p>
-<p><img alt="截屏2024-04-24 12.52.12" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.52.12.png" /></p>
+<p><img alt="截屏2024-04-24 12.52.12" src="../img/lab9/2.png" /></p>
 <h5 id="22_d">2.2 正边沿维持阻塞型D触发器<a class="headerlink" href="#22_d" title="Permanent link">&para;</a></h5>
 <p>具体实现如下所示：</p>
-<p><img alt="截屏2024-04-24 12.53.53" src="/Users/Mark/Library/Application Support/typora-user-images/截屏2024-04-24 12.53.53.png" /></p>
+<p><img alt="" src="../img/lab9/1.png" /></p>
 <h2 id="_5">四 实验步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ol>
 <li>实现基本SR锁存器，验证功能和存在的时序问题</li>
