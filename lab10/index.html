@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../lab8/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../verilog/">
+        <link rel="next" href="../lab4/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>实验九 锁存器与触发器基本原理 - 2024 数字逻辑设计 实验指导</title>
+        <title>实验十 VGA交互的使用 - 2024 数字逻辑设计 实验指导</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#vga" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              实验九 锁存器与触发器基本原理
+              实验十 VGA交互的使用
             
           </span>
         </div>
@@ -208,10 +208,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../lab10/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    实验十 VGA交互的使用
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -220,6 +240,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一 实验目的
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二 实验环境
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      三 实验原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三 实验原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_vga" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. VGA接口的原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_vga" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. VGA模块的使用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      四 实验步骤
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      五 实验提交
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -328,30 +437,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    实验九 锁存器与触发器基本原理
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lab9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,152 +449,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      一 实验目的
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      二 实验环境
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      三 实验原理
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="三 实验原理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.锁存器
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.锁存器">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11_sr" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 SR锁存器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12_srcsr" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 门控SR(CSR)锁存器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13_d" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3 D锁存器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.触发器
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.触发器">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21sr" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1SR主从触发器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22_d" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 正边沿维持阻塞型D触发器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      四 实验步骤
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      五 实验提交要求
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -557,7 +500,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       一 实验目的
     </span>
@@ -566,7 +509,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       二 实验环境
     </span>
@@ -575,7 +518,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       三 实验原理
     </span>
@@ -585,77 +528,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1_vga" class="md-nav__link">
     <span class="md-ellipsis">
-      1.锁存器
+      1. VGA接口的原理
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1.锁存器">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11_sr" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 SR锁存器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12_srcsr" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 门控SR(CSR)锁存器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13_d" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3 D锁存器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.触发器
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.触发器">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21sr" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1SR主从触发器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22_d" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 正边沿维持阻塞型D触发器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -665,7 +542,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#2_vga" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. VGA模块的使用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       四 实验步骤
     </span>
@@ -674,9 +560,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      五 实验提交要求
+      五 实验提交
     </span>
   </a>
   
@@ -697,98 +583,49 @@
                   
 
 
-<h1 id="_1">实验九 锁存器与触发器基本原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">一 实验目的<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h1 id="vga">实验十 VGA交互的使用<a class="headerlink" href="#vga" title="Permanent link">&para;</a></h1>
+<h2 id="_1">一  实验目的<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ol>
-<li>掌握锁存器与触发器构成的条件和工作原理</li>
-<li>掌握锁存器与触发器的区别</li>
-<li>掌握基本SR锁存器、门控SR锁存器、D锁存器、SR锁存器、D触发器的基本功能</li>
-<li>掌握基本SR锁存器、门控SR锁存器、D锁存器、SR锁存器存在的时序问题</li>
+<li>了解VGA接口的使用方法</li>
 </ol>
-<h2 id="_3">二 实验环境<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_2">二  实验环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ol>
-<li>EDA 工具： Logisim Evolution、Vivado（可选）</li>
+<li>EDA 工具： Logisim Evolution、Vivado</li>
+<li>SWORD 开发板</li>
 <li>操作系统： Windows 10+</li>
 </ol>
-<h2 id="_4">三 实验原理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h4 id="1">1.锁存器<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
-<p>锁存器(Latch)是一种对脉冲电平敏感的存储单元电路，它们可以在特定输入脉冲电平作用下改变状态。锁存，就是把信号暂存以维持某种电平状态。锁存器的最主要作用是缓存，其次完成高速的控制器与慢速的外设的不同步问题，再其次是解决驱动的问题，最后是解决一个 I/O 口既能输出也能输入的问题。锁存器是利用电平控制数据的输入，它包括不带使能控制的锁存器和带使能控制的锁存器。</p>
-<p>构成锁存器的充分条件：</p>
-<ul>
-<li>能长期保持给定的某个稳定状态</li>
-<li>有两个稳定状态：0、1</li>
-</ul>
-<p>在一定条件下能随时改变逻辑状态，即：置1或置0</p>
-<p>最基本的锁存器有：SR锁存器、D锁存器</p>
-<p>锁存器有两个稳定状态，又称双稳态电路</p>
-<h5 id="11_sr">1.1 SR锁存器<a class="headerlink" href="#11_sr" title="Permanent link">&para;</a></h5>
-<p>将两个具有2输入端的反向逻辑器件的输出与输入端交叉连起来，另一个输入端作为外部信息输出端，就构成最简单的SR锁存器：<img alt="截屏2024-04-24 11.58.05" src="../img/lab9/6.png" /></p>
-<p><img alt="截屏2024-04-24 11.58.31" src="../img/lab9/5.png" /></p>
-<p>这里给出了SR锁存器的两种实现，本次实验可以取任意一种实现。</p>
-<h5 id="12_srcsr">1.2 门控SR(CSR)锁存器<a class="headerlink" href="#12_srcsr" title="Permanent link">&para;</a></h5>
-<p>在SR锁存器上添加与门作为使能：</p>
-<p><img alt="截屏2024-04-24 12.00.05" src="img/lab4.png" /></p>
-<h5 id="13_d">1.3 D锁存器<a class="headerlink" href="#13_d" title="Permanent link">&para;</a></h5>
-<p>以上两种基本的锁存器都存在一个问题：对于S/R某种输入组合存在不确定状态。</p>
-<p>为了消除不确定状态，一种解决方法是限定锁存器的输入状态：</p>
-<p><img alt="截屏2024-04-24 12.01.59" src="../img/lab9/3.png" /></p>
-<p>只需一个输入端D就可以控制输入信号，相当于强制使原来SR的输入信号互为反向，避免了SR相同电平下未定义状态的问题。</p>
-<p>D锁存器的缺点：存在空翻现象——如果D锁存器直接用在时序电路中作为状态存储元件，当使能控制信号有效时，会导致该元件内部的状态值随时多次改变，而不是保持所需的原始状态值。</p>
-<h4 id="2">2.触发器<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
-<p>为了解决锁存器存在的以上问题，实际电路中往往使用触发器。</p>
-<h5 id="21sr">2.1SR主从触发器<a class="headerlink" href="#21sr" title="Permanent link">&para;</a></h5>
-<p>由两个门控S-R锁存器串联构成，第二个锁存器的时钟通过反相器取反。当C=1时，输入信号进入第一个锁存器（主锁存器）；当C=0时，第二个锁存器（从锁存器）改变输出；从输入到输出的通路被不同的时钟信号值(C = 1和 C = 0)所断开。</p>
-<p><img alt="截屏2024-04-24 12.52.12" src="../img/lab9/2.png" /></p>
-<h5 id="22_d">2.2 正边沿维持阻塞型D触发器<a class="headerlink" href="#22_d" title="Permanent link">&para;</a></h5>
-<p>具体实现如下所示：</p>
-<p><img alt="" src="../img/lab9/1.png" /></p>
-<h2 id="_5">四 实验步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li>实现基本SR锁存器，验证功能和存在的时序问题</li>
-<li>实现门控SR锁存器，并验证功能和存在的时序问题</li>
-<li>实现D锁存器，并验证功能和存在的时序问题</li>
-<li>实现SR主从触发器，并验证功能和存在的时序问题</li>
-<li>实现D触发器，并验证功能</li>
-</ol>
-<h2 id="_6">五 实验提交要求<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件（思考题）、仿真激励文件（思考题）的 zip 压缩包</p>
-</li>
-<li>
-<p>一份不超过 3 页的 PDF 格式的实验报告（无需封面），内容包含：</p>
-</li>
-<li>
-<p>锁存器、触发器的设计思路</p>
-</li>
-<li>
-<p>验证结果以及分析</p>
-</li>
-<li>
-<p>思考题，包含：</p>
-<ol>
-<li>
-<p>Verilog语句中触发使用的是“always”语句，谈谈“always”语句和本实验的联系，以及正负边沿触发的实现思路。</p>
-</li>
-<li>
-<p>使用Verilog对本实验提供的正边沿维持阻塞型D触发器进行仿真验证。</p>
-<p>提示：</p>
-</li>
-</ol>
-</li>
-</ol>
-<div class="codehilite"><pre><span></span><code><span class="k">initial</span><span class="w"> </span><span class="k">begin</span>
-<span class="w">  </span><span class="n">S</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span>
-<span class="w">  </span><span class="n">R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span>
-<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">150</span><span class="p">;</span>
-<span class="w">  </span><span class="n">D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">150</span><span class="p">;</span>
-<span class="k">end</span>
-
-<span class="k">always</span><span class="w"> </span><span class="k">begin</span>
-<span class="w">  </span><span class="n">C</span><span class="o">=</span><span class="mh">0</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">50</span><span class="p">;</span>
-<span class="w">  </span><span class="n">C</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span><span class="w"> </span><span class="p">#</span><span class="mh">50</span><span class="p">;</span>
-<span class="k">end</span>
+<h2 id="_3">三  实验原理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_vga">1. VGA接口的原理<a class="headerlink" href="#1_vga" title="Permanent link">&para;</a></h3>
+<p>在 Sword 开发板上，VGA包含<code>R</code>、<code>G</code>、<code>B</code>、<code>HS</code>、<code>VS</code>几个接口。其中，<code>R</code>、<code>G</code>、<code>B</code> 为表示像素颜色的信号，<code>HS</code>、<code>VS</code> 分别为行同步信号和场同步信号。显示屏通过 VGA 接口传入的 <code>HS</code> 信号和 <code>VS</code> 信号来确定当前需要显示的像素，并且将 <code>R</code>、<code>G</code>、<code>B</code> 信号对应的颜色显示在该像素的位置上。根据显示屏大小和扫描频率的不同，需要让 <code>HS</code>、<code>VS</code> 信号按照不同的周期发生变化，其具体细节由下面的 VGA 模块实现。</p>
+<p>VGA 各个接口的引脚约束如右：<a href="../VGA.xdc">VGA.xdc</a></p>
+<h2 id="2_vga">2. VGA模块的使用<a class="headerlink" href="#2_vga" title="Permanent link">&para;</a></h2>
+<p>VGA 模块的代码如右：<a href="../VGA.v">VGA.v</a></p>
+<p>VGA 模块的模块接口定义如下：</p>
+<div class="codehilite"><pre><span></span><code><span class="k">module</span><span class="w"> </span><span class="n">VGA</span><span class="p">(</span>
+<span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="n">clk</span><span class="p">,</span><span class="w">                  </span><span class="c1">// vga clk = 25 MHz</span>
+<span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="n">rst</span><span class="p">,</span>
+<span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="p">[</span><span class="mh">11</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="n">Din</span><span class="p">,</span><span class="w">            </span><span class="c1">// bbbb_gggg_rrrr, pixel</span>
+<span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="p">[</span><span class="mh">8</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="n">row</span><span class="p">,</span><span class="w">        </span><span class="c1">// pixel ram row address, 480 (512) lines</span>
+<span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="p">[</span><span class="mh">9</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="n">col</span><span class="p">,</span><span class="w">        </span><span class="c1">// pixel ram col address, 640 (1024) pixels</span>
+<span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="n">rdn</span><span class="p">,</span><span class="w">             </span><span class="c1">// read pixel RAM (active_low)</span>
+<span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="p">[</span><span class="mh">3</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="n">R</span><span class="p">,</span><span class="w"> </span><span class="n">G</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w">    </span><span class="c1">// red, green, blue colors</span>
+<span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="n">HS</span><span class="p">,</span><span class="w"> </span><span class="n">VS</span><span class="w">           </span><span class="c1">// horizontal and vertical synchronization</span>
+<span class="w">   </span><span class="p">);</span>
 </code></pre></div>
+
+<p>其中，clk 为 25 MHz 的时钟信号 VGA 模块可以根据输入的 clk 输入信号，生成对应大小为 <code>600 * 480</code>、扫描频率为 <code>60 Hz</code>（与板子上的屏幕相匹配）的 <code>HS</code> 和 <code>VS</code> 信号，同时通过 <code>row</code> 和 <code>col</code> 输出信号传出当前的 <code>HS</code> 和 <code>VS</code> 信号对应的像素位置。其他模块可以通过读取 <code>row</code> 和 <code>col</code> 的值，来判断输出像素的 RGB 值，并将其传入 <code>Din</code> 接口，随后 VGA 模块会将 <code>Din</code> 接口的十二为数据按照 <code>bbbb_gggg_rrrr</code> 的模式由 <code>R</code>、<code>G</code>、<code>B</code> 接口传出。<code>rdn</code> 接口为读使能接口，当 <code>rdn</code> 为 1 时，无需其他模块传入 <code>Din</code> 的值。<code>R</code>、<code>G</code>、<code>B</code>、<code>HS</code>、<code>VS</code> 五个接口则是直接连接到顶层模块的五个 VGA 输出信号的接口。</p>
+<p>为此，我们可以参考右侧的<a href="../top10.v">代码</a>编写顶层模块，以调用VGA接口。</p>
+<h2 id="_4">四  实验步骤<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>借助上一部分所阐述的 VGA 接口和 VGA 模块使用方式，编写在用于屏幕上显示一个圆的电路，要求可以通过输入信号改变圆的位置和大小（输入与圆位置和大小之间的映射关系由你自己决定）。</p>
+<h2 id="_5">五  实验提交<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>包含本实验所使用的所有 Logisim 电路图文件、Verilog 源文件、仿真激励文件和引脚约束文件的 zip 压缩包</li>
+<li>一份不超过 2 页的 PDF 格式的实验报告，内容包含：<ul>
+<li>各模块设计思路</li>
+<li>上板验证结果以及分析</li>
+</ul>
+</li>
+</ol>
 
 
 
