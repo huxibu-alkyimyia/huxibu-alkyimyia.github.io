@@ -10,6 +10,7 @@ module VGA(
    );
 // h_count: VGA horizontal counter (0~799)
 reg [9:0] h_count; // VGA horizontal counter (0~799): pixels
+initial h_count = 10'h0;
 	always @ (posedge clk) begin
 		if (rst)  h_count <= 10'h0;
 		else if  (h_count == 10'd799)
@@ -19,6 +20,7 @@ reg [9:0] h_count; // VGA horizontal counter (0~799): pixels
 
 // v_count: VGA vertical counter (0~524)
 reg [9:0] v_count; // VGA vertical counter (0~524): pixel
+initial v_count = 10'h0;
 	always @ (posedge clk or posedge rst) begin
 		if (rst)  v_count <= 10'h0;
 		else if  (h_count == 10'd799) begin

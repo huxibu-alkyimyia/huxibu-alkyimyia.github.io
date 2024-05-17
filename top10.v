@@ -19,7 +19,7 @@ module top (
 ​	wire rdn;
 ​	wire [11:0] pixel;
 
-​	VGA vga0(.clk(clkdiv[2]), .rst(rst), .R(R), .G(G), .B(B), .HS(HS), .VS(VS), .row(row), .col(col), .rdn(rdn), .Din(pixel));
+​	VGA vga0(.clk(clkdiv[1]), .rst(rst), .R(R), .G(G), .B(B), .HS(HS), .VS(VS), .row(row), .col(col), .rdn(rdn), .Din(pixel));
 ​	other_module others(.row(row), .col(col), .rdn(rdn), .pixel(pixel), ...);
 
 endmodule
