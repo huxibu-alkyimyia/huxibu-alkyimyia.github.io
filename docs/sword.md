@@ -16,7 +16,7 @@ Arduino 子板上 LED 共有十六个，位置如下图所示，每个 LED 的�
 
 ![](img/sword/2.jpg)
 
-其引脚约束代码如右：[LED.xdc](sword/LED.xdc)
+其引脚约束代码如右：[LED.xdc](img/sword/LED.xdc)
 
 当对应引脚输出为 1 时，LED 亮，否则 LED 灭。
 
