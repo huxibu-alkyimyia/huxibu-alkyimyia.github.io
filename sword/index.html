@@ -510,6 +510,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      蜂鸣器
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -618,6 +627,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      蜂鸣器
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -681,6 +699,11 @@
 <p>常用的通码键盘对照表如下图所示：</p>
 <p><img alt="" src="../img/sword/R.jpg" /></p>
 <p>当某一按键的通码长 1 字节，为 <code>0xYY</code> 时，其断码长 2 字节，为 <code>0xF0</code> <code>0xYY</code>；当某一按键的通码长 2 字节，为 <code>0xE0</code> <code>0xYY</code> 时，其断码长 3 字节，为 <code>0xE0</code> <code>0xF0</code> <code>0xYY</code>。</p>
+<h2 id="_4">蜂鸣器<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>蜂鸣器发出其与其接收的信号的频率对应的声音。其引脚约束如下：</p>
+<div class="codehilite"><pre><span></span><code><span class="n">set_property</span><span class="w"> </span><span class="n">PACKAGE_PIN</span><span class="w"> </span><span class="n">AF25</span><span class="w"> </span><span class="p">[</span><span class="n">get_ports</span><span class="w"> </span><span class="n">buzzer</span><span class="p">]</span>
+<span class="n">set_property</span><span class="w"> </span><span class="n">IOSTANDARD</span><span class="w"> </span><span class="n">LVCMOS33</span><span class="w"> </span><span class="p">[</span><span class="n">get_ports</span><span class="w"> </span><span class="n">buzzer</span><span class="p">]</span>
+</code></pre></div>
 
 
 
